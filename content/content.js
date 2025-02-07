@@ -9,5 +9,9 @@ if (aiDIV) {
     console.log("Yeeted");
 }
 else {
+    chrome.runtime.sendMessage({
+        from: "content",
+        subject: "didNotYeet"
+    })
     console.log("Nothing to yeet");
 }
