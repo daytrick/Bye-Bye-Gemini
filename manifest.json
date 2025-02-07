@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Google AI Yeeter",
+    "version": "1",
+    "description": "Yeet any Google AI overviews off the page.",
+    "content_scripts": [
+        {
+            "js": ["content/content.js"],
+            "matches": [
+                "https://www.google.com/search*"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "action": {
+        "default_popup": "content/popup.html"
+    }
+}
