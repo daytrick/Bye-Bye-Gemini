@@ -1,13 +1,18 @@
+// Get the popup text span
 let span = document.getElementById('aiHasBeenYeeted');
-span.innerText = "idk";
+span.innerText = "tbc";
 
+/**
+ * Set the popup text depending on whether the AI overview was removed.
+ * @param {Boolean} status removal status
+ */
 function setYeetStatus(status) {
     if (span) {
         if (status) {
-            span.innerText = "YES";
+            span.innerText = "🦀 YES 🦀";
         }
         else {
-            span.innerText = "NO";
+            span.innerText = "nothing to yeet";
         }
     }
     else {
