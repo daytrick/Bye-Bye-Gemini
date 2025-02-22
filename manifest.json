@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Google AI Yeeter",
+    "name": "Bye Bye, Gemini",
     "version": "1",
     "description": "Yeet any Google AI overviews off the page.",
     "content_scripts": [
@@ -13,6 +13,7 @@
         }
     ],
     "action": {
+        "default_title": "Bye Bye, Gemini",
         "default_popup": "content/popup.html"
     }
 }

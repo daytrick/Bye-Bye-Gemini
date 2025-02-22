@@ -1,0 +1,13 @@
+html {
+    min-width: 150px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
