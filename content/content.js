@@ -1,4 +1,4 @@
-const aiDIV = document.querySelector("#Odp5De > div:nth-child(1)");
+const aiDIV = document.querySelectorAll("#Odp5De > div:nth-child(1), #dEwkXc > div");
 var yeetStatus = undefined;
 
 chrome.runtime.onConnect.addListener((port) => {
@@ -10,8 +10,10 @@ chrome.runtime.onConnect.addListener((port) => {
     }) 
 })
 
-if (aiDIV) {
-    aiDIV.remove();
+if (aiDIV.length > 0) {
+    aiDIV.forEach((elem) => {
+        elem.remove();
+    });
     yeetStatus = true;
 }
 else {
